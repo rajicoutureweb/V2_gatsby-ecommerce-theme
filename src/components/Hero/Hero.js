@@ -18,15 +18,10 @@ const Hero = (props) => {
   } = props;
   return (
     <div className={styles.root} style={{ backgroundImage: `url(${image})` }}>
-      <div className={styles.content} style={{ maxWidth: '600px' }}>
+      <div className={styles.content} style={{ maxWidth: maxWidth }}>
         {header && <span className={styles.header}>{header}</span>}
-             <rectenglis>
-          {title && <h2 className={styles.title} m80mm>{title}</h2>}
-           </rectenglis>
-<center>
-          
-         {subtitle && <span className={styles.subtitle}>{subtitle}</span>}
-          </center>
+        {title && <h2 className={styles.title}>{title}</h2>}
+        {subtitle && <span className={styles.subtitle}>{subtitle}</span>}
         {ctaText && (
           <Button
             className={`${styles.ctaButton} ${ctaStyle}`}
